@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contato", "Contato", "{E14E55B3-B179-431A-84BD-925B002CC3F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fase4.Contato.API", "Fase4.Contato.API\Fase4.Contato.API.csproj", "{EC0B5190-80F9-49D3-BD4D-7E1136031AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fase4.Contato.Core", "Fase4.Contato.Core\Fase4.Contato.Core.csproj", "{AD005FA0-0174-4E6C-B0DB-8113535CE902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fase4.Contato.Infra", "Fase4.Contato.Infra\Fase4.Contato.Infra.csproj", "{59D2647D-C4E2-45BE-9B11-E5B43C4D2707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fase4.Contato.Shared", "Fase4.Contato.Shared\Fase4.Contato.Shared.csproj", "{DC5046DF-3339-4500-841F-AD4E41AED1EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fase4.Contato.Consumer.Cadastrar", "Fase4.Contato.Consumer.Cadastrar\Fase4.Contato.Consumer.Cadastrar.csproj", "{BE65A90B-C192-4CD6-9E87-AC73DEB7BE06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B48CBA1-196B-49D2-84ED-569EB076536F}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC0B5190-80F9-49D3-BD4D-7E1136031AF8} = {E14E55B3-B179-431A-84BD-925B002CC3F2}
+		{AD005FA0-0174-4E6C-B0DB-8113535CE902} = {E14E55B3-B179-431A-84BD-925B002CC3F2}
+		{59D2647D-C4E2-45BE-9B11-E5B43C4D2707} = {E14E55B3-B179-431A-84BD-925B002CC3F2}
+		{DC5046DF-3339-4500-841F-AD4E41AED1EE} = {E14E55B3-B179-431A-84BD-925B002CC3F2}
+		{BE65A90B-C192-4CD6-9E87-AC73DEB7BE06} = {E14E55B3-B179-431A-84BD-925B002CC3F2}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC0B5190-80F9-49D3-BD4D-7E1136031AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0B5190-80F9-49D3-BD4D-7E1136031AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0B5190-80F9-49D3-BD4D-7E1136031AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0B5190-80F9-49D3-BD4D-7E1136031AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD005FA0-0174-4E6C-B0DB-8113535CE902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD005FA0-0174-4E6C-B0DB-8113535CE902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD005FA0-0174-4E6C-B0DB-8113535CE902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD005FA0-0174-4E6C-B0DB-8113535CE902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D2647D-C4E2-45BE-9B11-E5B43C4D2707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D2647D-C4E2-45BE-9B11-E5B43C4D2707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D2647D-C4E2-45BE-9B11-E5B43C4D2707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D2647D-C4E2-45BE-9B11-E5B43C4D2707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5046DF-3339-4500-841F-AD4E41AED1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5046DF-3339-4500-841F-AD4E41AED1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5046DF-3339-4500-841F-AD4E41AED1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5046DF-3339-4500-841F-AD4E41AED1EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE65A90B-C192-4CD6-9E87-AC73DEB7BE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE65A90B-C192-4CD6-9E87-AC73DEB7BE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE65A90B-C192-4CD6-9E87-AC73DEB7BE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE65A90B-C192-4CD6-9E87-AC73DEB7BE06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

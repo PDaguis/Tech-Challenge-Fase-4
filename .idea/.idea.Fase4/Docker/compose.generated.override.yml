@@ -1,0 +1,39 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  fase4.contato.api:
+    build:
+      context: "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4"
+      dockerfile: "Fase4.Contato.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Fase4.Contato.API.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "fase4.contato.api:dev"
+    ports: []
+    volumes:
+    - "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.API:/app:rw"
+    - "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4:/src:rw"
+    - "/Users/pdaguis/.nuget/packages:/home/app/.nuget/packages"
+    working_dir: "/app"
+  fase4.contato.consumer.cadastrar:
+    build:
+      context: "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4"
+      dockerfile: "Fase4.Contato.Consumer.Cadastrar/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Fase4.Contato.Consumer.Cadastrar.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "fase4.contato.consumer.cadastrar:dev"
+    ports: []
+    volumes:
+    - "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Consumer.Cadastrar:/app:rw"
+    - "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4:/src:rw"
+    - "/Users/pdaguis/.nuget/packages:/home/app/.nuget/packages"
+    working_dir: "/app"

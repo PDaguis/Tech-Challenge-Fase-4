@@ -1,0 +1,48 @@
+﻿services:
+  fase4.contato.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Release
+      - ASPNETCORE_HTTP_PORTS=4000
+    container_name: fase4.contato.api
+    image: fase4.contato.api
+    build:
+      context: .
+      dockerfile: Fase4.Contato.API/Dockerfile
+    networks:
+      - fase4_network
+    volumes:
+      - ~/.aspnet/https:/https:ro
+    depends_on:
+      - rabbitmq
+  
+  fase4.contato.consumer.cadastrar:
+    image: fase4.contato.consumer.cadastrar
+    build:
+      context: .
+      dockerfile: Fase4.Contato.Consumer.Cadastrar/Dockerfile
+    depends_on:
+      - rabbitmq
+    networks:
+      - fase4_network
+  
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+      - fase4_network
+    healthcheck:
+      test: [ "CMD", "nc", "-z", "localhost", "5672" ]
+      interval: 5s
+      timeout: 15s
+      retries: 1
+networks:
+  fase4_network:
+    driver: bridge
+  

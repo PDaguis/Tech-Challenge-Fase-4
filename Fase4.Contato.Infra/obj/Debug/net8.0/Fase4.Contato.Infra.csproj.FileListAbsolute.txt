@@ -1,0 +1,17 @@
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/bin/Debug/net8.0/Fase4.Contato.Infra.deps.json
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/bin/Debug/net8.0/Fase4.Contato.Infra.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/bin/Debug/net8.0/Fase4.Contato.Infra.pdb
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/bin/Debug/net8.0/Fase4.Contato.Core.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/bin/Debug/net8.0/Fase4.Contato.Shared.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/bin/Debug/net8.0/Fase4.Contato.Core.pdb
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/bin/Debug/net8.0/Fase4.Contato.Shared.pdb
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.csproj.AssemblyReference.cache
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.AssemblyInfoInputs.cache
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.AssemblyInfo.cs
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.csproj.CoreCompileInputs.cache
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Co.D817C0D9.Up2Date
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/refint/Fase4.Contato.Infra.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.pdb
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/ref/Fase4.Contato.Infra.dll

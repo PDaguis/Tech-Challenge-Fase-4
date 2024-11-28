@@ -1,0 +1,11 @@
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/bin/Debug/net8.0/Fase4.Contato.Shared.deps.json
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/bin/Debug/net8.0/Fase4.Contato.Shared.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/bin/Debug/net8.0/Fase4.Contato.Shared.pdb
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/Debug/net8.0/Fase4.Contato.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/Debug/net8.0/Fase4.Contato.Shared.AssemblyInfoInputs.cache
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/Debug/net8.0/Fase4.Contato.Shared.AssemblyInfo.cs
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/Debug/net8.0/Fase4.Contato.Shared.csproj.CoreCompileInputs.cache
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/Debug/net8.0/Fase4.Contato.Shared.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/Debug/net8.0/refint/Fase4.Contato.Shared.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/Debug/net8.0/Fase4.Contato.Shared.pdb
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/Debug/net8.0/ref/Fase4.Contato.Shared.dll

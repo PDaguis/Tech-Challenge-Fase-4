@@ -1,0 +1,202 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/Fase4.Contato.Infra.csproj": {}
+  },
+  "projects": {
+    "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/Fase4.Contato.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/Fase4.Contato.Core.csproj",
+        "projectName": "Fase4.Contato.Core",
+        "projectPath": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/Fase4.Contato.Core.csproj",
+        "packagesPath": "/Users/pdaguis/.nuget/packages/",
+        "outputPath": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/pdaguis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/pdaguis/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/Fase4.Contato.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/Fase4.Contato.Infra.csproj",
+        "projectName": "Fase4.Contato.Infra",
+        "projectPath": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/Fase4.Contato.Infra.csproj",
+        "packagesPath": "/Users/pdaguis/.nuget/packages/",
+        "outputPath": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/pdaguis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/Fase4.Contato.Core.csproj": {
+                "projectPath": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/Fase4.Contato.Core.csproj"
+              },
+              "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/Fase4.Contato.Shared.csproj": {
+                "projectPath": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/Fase4.Contato.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/pdaguis/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/Fase4.Contato.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/Fase4.Contato.Shared.csproj",
+        "projectName": "Fase4.Contato.Shared",
+        "projectPath": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/Fase4.Contato.Shared.csproj",
+        "packagesPath": "/Users/pdaguis/.nuget/packages/",
+        "outputPath": "/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/pdaguis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/pdaguis/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

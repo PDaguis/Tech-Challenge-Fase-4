@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Fase4.Contato.API.props" />
+</Project>
