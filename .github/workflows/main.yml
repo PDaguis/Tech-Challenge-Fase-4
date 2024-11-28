@@ -18,7 +18,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet teste --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal
     - name: Docker Login
       # You may pin to the exact commit or the version.
       # uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567
