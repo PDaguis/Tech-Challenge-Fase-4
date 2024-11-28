@@ -1,0 +1,41 @@
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet teste --no-build --verbosity normal
+    - name: Docker Login
+      # You may pin to the exact commit or the version.
+      # uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567
+      uses: docker/login-action@v3.3.0
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+    - name: Build and push Contato API Docker Image
+      uses: docker/build-push-action@v6.10.0
+      with:
+        context: Fase4.Contato.API/Fase4.Contato.API.csproj
+        push: true
+        tags: pdaguis/fase4-api:latest
+
+    - name: Build and push Contato Cadastrar Worker Service Docker Image
+      uses: docker/build-push-action@v6.10.0
+      with:
+        context: Fase4.Contato.Consumer.Cadastrar/Fase4.Contato.Consumer.Cadastrar.csproj
+        push: true
+        tags: pdaguis/fase4-cadastrar-worker:latest
