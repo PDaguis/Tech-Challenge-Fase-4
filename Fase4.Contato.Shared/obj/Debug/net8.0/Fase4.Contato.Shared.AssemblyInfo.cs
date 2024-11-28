@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fase4.Contato.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcd514a88eddfe60c9a40fd12bdfdc32fbea9632")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fase4.Contato.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fase4.Contato.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -240,3 +240,4 @@
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.API/obj/Debug/net8.0/Fase4.Contato.API.genruntimeconfig.cache
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.API/obj/Debug/net8.0/ref/Fase4.Contato.API.dll
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.API/bin/Debug/net8.0/RabbitMQ.Client.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.API/obj/Debug/net8.0/Fase4.Contato.API.sourcelink.json

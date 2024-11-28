@@ -9,3 +9,4 @@
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/obj/Debug/net8.0/refint/Fase4.Contato.Core.dll
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/obj/Debug/net8.0/Fase4.Contato.Core.pdb
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/obj/Debug/net8.0/ref/Fase4.Contato.Core.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Core/obj/Debug/net8.0/Fase4.Contato.Core.sourcelink.json

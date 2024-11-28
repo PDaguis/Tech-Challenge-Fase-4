@@ -15,3 +15,4 @@
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/refint/Fase4.Contato.Infra.dll
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.pdb
 /Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/ref/Fase4.Contato.Infra.dll
+/Users/pdaguis/Documents/Estudos/FIAP/TC/Fase4/Fase4.Contato.Infra/obj/Debug/net8.0/Fase4.Contato.Infra.sourcelink.json
