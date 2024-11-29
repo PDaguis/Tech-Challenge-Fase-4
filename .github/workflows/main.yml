@@ -29,13 +29,13 @@ jobs:
     - name: Build and push Contato API Docker Image
       uses: docker/build-push-action@v6.10.0
       with:
-        context: Fase4.Contato.API/Fase4.Contato.API.csproj
+        context: Fase4.Contato.API/Dockerfile
         push: true
         tags: pdaguis/fase4-api:latest
 
     - name: Build and push Contato Cadastrar Worker Service Docker Image
       uses: docker/build-push-action@v6.10.0
       with:
-        context: Fase4.Contato.Consumer.Cadastrar/Fase4.Contato.Consumer.Cadastrar.csproj
+        context: Fase4.Contato.Consumer.Cadastrar/Dockerfile
         push: true
         tags: pdaguis/fase4-cadastrar-worker:latest
