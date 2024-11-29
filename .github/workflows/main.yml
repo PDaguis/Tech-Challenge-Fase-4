@@ -36,6 +36,6 @@ jobs:
     - name: Build and push Contato Cadastrar Worker Service Docker Image
       uses: docker/build-push-action@v6.10.0
       with:
-        context: .
+        file: ./Fase4.Contato.Consumer.Cadastrar/Dockerfile
         push: true
         tags: pdaguis/fase4-cadastrar-worker:latest
