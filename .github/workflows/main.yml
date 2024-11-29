@@ -30,7 +30,6 @@ jobs:
       uses: docker/build-push-action@v6.10.0
       with:
         context: .
-        file: /Fase4.Contato.API
         push: true
         tags: pdaguis/fase4-api:latest
 
@@ -38,6 +37,5 @@ jobs:
       uses: docker/build-push-action@v6.10.0
       with:
         context: .
-        file: /Fase4.Contato.Consumer.Cadastrar
         push: true
         tags: pdaguis/fase4-cadastrar-worker:latest
