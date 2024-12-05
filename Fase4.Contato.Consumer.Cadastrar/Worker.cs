@@ -22,27 +22,30 @@ public class Worker : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            var factory = new ConnectionFactory()
+            try
             {
-                HostName = "rabbitmq",
-                UserName = "pdaguis",
-                Password = "p12345",
-                Port = 5672
-            };
-            using var connection = await factory.CreateConnectionAsync();
-            using var channel = await connection.CreateChannelAsync();
-            
-            channel.QueueDeclareAsync(
-                    queue: "mq-contato-cadastrar",
-                    durable: false,
-                    exclusive: false,
-                    autoDelete: true,
-                    arguments: null);
+                var factory = new ConnectionFactory()
+                {
+                    HostName = "rabbitmq",
+                    UserName = "pdaguis",
+                    Password = "pdaguis",
+                    Port = 5672
+                };
+                using var connection = await factory.CreateConnectionAsync();
+                using var channel = await connection.CreateChannelAsync();
+
+                await channel.QueueDeclareAsync(
+                        queue: "mq-contato-cadastrar",
+                        durable: false,
+                        exclusive: false,
+                        autoDelete: true,
+                        arguments: null);
 
                 var consumer = new AsyncEventingBasicConsumer(channel);
 
                 consumer.ReceivedAsync += (sender, eventArgs) =>
                 {
+                    _logger.LogInformation($"Mensagem recebida!");
                     var body = eventArgs.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
                     var response = JsonSerializer.Deserialize<ContatoPost>(message);
@@ -54,6 +57,7 @@ public class Worker : BackgroundService
                         Telefone = response.Telefone,
                         RegiaoId = response.RegiaoId
                     };
+                    _logger.LogInformation("Contato cadastrado com sucesso!");
                     Console.WriteLine("Contato cadastrado com sucesso!");
                     return Task.CompletedTask;
                 };
@@ -62,9 +66,15 @@ public class Worker : BackgroundService
                     queue: "mq-contato-cadastrar",
                     autoAck: true,
                     consumer: consumer);
-            
 
-            await Task.Delay(2000, stoppingToken);
+
+                await Task.Delay(2000, stoppingToken);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError($"ERRO: {e.Message}");
+                throw;
+            }
         }
     }
 }

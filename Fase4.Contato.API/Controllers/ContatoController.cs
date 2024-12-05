@@ -10,6 +10,13 @@ namespace Fase4.Contato.API.Controllers
     [ApiController]
     public class ContatoController : ControllerBase
     {
+        private ILogger<ContatoController> _logger;
+
+        public ContatoController(ILogger<ContatoController> logger)
+        {
+            _logger = logger;
+        }
+
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -17,11 +24,12 @@ namespace Fase4.Contato.API.Controllers
         {
             try
             {
+                _logger.LogInformation("Contato recebido!");
                 var factory = new ConnectionFactory()
                 {
                     HostName = "rabbitmq",
                     UserName = "pdaguis",
-                    Password = "p12345",
+                    Password = "pdaguis",
                     Port = 5672
                 };
                 using var connection = await factory.CreateConnectionAsync();
@@ -41,11 +49,14 @@ namespace Fase4.Contato.API.Controllers
                         exchange: string.Empty, 
                         routingKey: "",
                         body: body);
-                
-                return Ok();
+
+                _logger.LogInformation("Contato enviado para a fila!");
+
+                return Ok("Enviado para a fila!");
             }
             catch (Exception e)
             {
+                _logger.LogError($"ERRO: {e.Message}");
                 Console.WriteLine(e);
                 return BadRequest(e.Message);
             }

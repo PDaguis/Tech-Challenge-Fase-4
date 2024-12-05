@@ -3,11 +3,17 @@
     environment:
       - ASPNETCORE_ENVIRONMENT=Release
       - ASPNETCORE_HTTP_PORTS=4000
+      - ASPNETCORE_HTTPS_PORTS=4001
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=123
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/fase1.pfx
     container_name: fase4.contato.api
     image: fase4.contato.api
     build:
       context: .
-      dockerfile: Fase4.Contato.API/Dockerfile
+      dockerfile: ./Contato/Fase4.Contato.API/Dockerfile
+    ports:
+      - "4000:4000"
+      - "4001:4001"
     networks:
       - fase4_network
     volumes:
@@ -19,11 +25,11 @@
     image: fase4.contato.consumer.cadastrar
     build:
       context: .
-      dockerfile: Fase4.Contato.Consumer.Cadastrar/Dockerfile
-    depends_on:
-      - rabbitmq
+      dockerfile: ./Contato/Fase4.Contato.Consumer.Cadastrar/Dockerfile
     networks:
       - fase4_network
+    depends_on:
+      - rabbitmq
   
   rabbitmq:
     image: rabbitmq:3-management
