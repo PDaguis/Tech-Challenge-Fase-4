@@ -10,7 +10,7 @@
     image: fase4.contato.api
     build:
       context: .
-      dockerfile: ./Contato/Fase4.Contato.API/Dockerfile
+      dockerfile: Fase4.Contato.API/Dockerfile
     ports:
       - "4000:4000"
       - "4001:4001"
@@ -25,7 +25,7 @@
     image: fase4.contato.consumer.cadastrar
     build:
       context: .
-      dockerfile: ./Contato/Fase4.Contato.Consumer.Cadastrar/Dockerfile
+      dockerfile: Fase4.Contato.Consumer.Cadastrar/Dockerfile
     networks:
       - fase4_network
     depends_on:
