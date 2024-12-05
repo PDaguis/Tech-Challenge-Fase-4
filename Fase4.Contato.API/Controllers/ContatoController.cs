@@ -34,21 +34,28 @@ namespace Fase4.Contato.API.Controllers
                 };
                 using var connection = await factory.CreateConnectionAsync();
                 using var channel = await connection.CreateChannelAsync();
-                
+
                 await channel.QueueDeclareAsync(
                         queue: "mq-contato-cadastrar",
                         durable: false,
                         exclusive: false,
                         autoDelete: true,
                         arguments: null);
-                    
-                    var message = JsonSerializer.Serialize(contato);
-                    var body = Encoding.UTF8.GetBytes(message);
-                    
-                    await channel.BasicPublishAsync(
-                        exchange: string.Empty, 
-                        routingKey: "",
-                        body: body);
+
+                var message = JsonSerializer.Serialize(contato);
+                var body = Encoding.UTF8.GetBytes(message);
+
+                var props = new BasicProperties
+                {
+                    Persistent = true
+                };
+
+                await channel.BasicPublishAsync(
+                    exchange: string.Empty,
+                    routingKey: "mq-contato-cadastrar",
+                    body: body,
+                    basicProperties: props,
+                    mandatory: true);
 
                 _logger.LogInformation("Contato enviado para a fila!");
 
