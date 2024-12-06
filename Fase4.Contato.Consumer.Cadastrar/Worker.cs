@@ -28,7 +28,7 @@ public class Worker : BackgroundService
                 {
                     HostName = "rabbitmq",
                     UserName = "pdaguis",
-                    Password = "pdaguis",
+                    Password = "pdaguis123",
                     Port = 5672
                 };
                 using var connection = await factory.CreateConnectionAsync();

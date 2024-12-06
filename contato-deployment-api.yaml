@@ -18,7 +18,7 @@ spec:
       - name: fase4apipod
         image: pdaguis/fase4-api:latest
         ports:
-        - containerPort: 4000
+        - containerPort: 80
   
 ---
 
@@ -31,6 +31,5 @@ spec:
     app: fase4apipod
   ports:
     - protocol: TCP
-      port: 4000
-      targetPort: 9376
+      port: 80
   type: LoadBalancer
