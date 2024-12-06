@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fase4workerpod
+  labels:
+    app: fase4workerpod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fase4workerpod
+  template:
+    metadata:
+      labels:
+        app: fase4workerpod
+    spec:
+      containers:
+      - name: fase4workerpod
+        image: pdaguis/fase4-cadastrar-worker:latest

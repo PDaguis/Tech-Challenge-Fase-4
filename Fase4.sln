@@ -27,6 +27,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "yamls", "yamls", "{7A000195-8E10-4F83-A541-5324E6C40415}"
 	ProjectSection(SolutionItems) = preProject
 		contato-deployment-api.yaml = contato-deployment-api.yaml
+		contato-deployment-worker.yaml = contato-deployment-worker.yaml
 	EndProjectSection
 EndProject
 Global
