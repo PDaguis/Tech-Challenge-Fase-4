@@ -45,6 +45,7 @@ namespace Fase4.Contato.API.Controllers
                 var message = JsonSerializer.Serialize(contato);
                 var body = Encoding.UTF8.GetBytes(message);
 
+                _logger.LogInformation("Setando basic properties...");
                 var props = new BasicProperties
                 {
                     Persistent = true
