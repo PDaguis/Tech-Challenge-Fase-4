@@ -50,6 +50,7 @@ namespace Fase4.Contato.API.Controllers
                     Persistent = true
                 };
 
+                _logger.LogInformation("Publicando na fila...");
                 await channel.BasicPublishAsync(
                     exchange: string.Empty,
                     routingKey: "mq-contato-cadastrar",
